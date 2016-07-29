@@ -1,17 +1,29 @@
-*.class
+.class
 *.log
+.history
 
 # sbt specific
-.cache
-.history
-.lib/
-dist/*
 target/
 lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
+project/activator-sbt*
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
+# Sublime specific
+sublime.sbt
+*.sublime
+*.sublime-project
+*.sublime-workspace
+
+# Data
+data/*
+
+# IDEA InteliJ
+.idea/*
+.idea_modules/*
+projectFilesBackup/
+
+revision.txt
+
+.DS_Store
