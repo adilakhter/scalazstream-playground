@@ -32,8 +32,8 @@ scalacOptions := Seq("-encoding", "utf8",
                      "-Xlint",
                      "-deprecation",
                      "-Xlog-reflective-calls",
-                     "-Ywarn-unused",
-                     "-Ywarn-unused-import",
+                   //  "-Ywarn-unused",
+                   //  "-Ywarn-unused-import",
                      "-Ywarn-dead-code")
 scalariformSettings
 
