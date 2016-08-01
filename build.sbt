@@ -8,19 +8,18 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-val akkaVersion = "2.4.3"
-val sprayVersion = "1.3.3"
-val sparkVersion = "1.6.1"
+resolvers += "Sauron Software" at "https://raw.github.com/Takuto88/sauronsoftware-maven/master/releases"
+
 
 libraryDependencies ++= Seq(
-    "org.scalaz.stream"         %% "scalaz-stream"                  % "0.8.2", 
+    "org.scalaz.stream"         %% "scalaz-stream"                  % "0.8.2",
+    "it.sauronsoftware"          % "ftp4j"                          % "1.7.2",
     "org.scalatest"             %% "scalatest"                      % "2.2.5"        % "test",
     "org.scalacheck"            %% "scalacheck"                     % "1.13.0"
 )
 
 
 libraryDependencies += "com.lihaoyi" %% "ammonite" % "0.7.0" % "test" cross CrossVersion.full
-
 
 scalacOptions := Seq("-encoding", "utf8",
                      "-target:jvm-1.8",
